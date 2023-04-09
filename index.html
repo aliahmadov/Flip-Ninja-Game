@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <canvas id="canvas">
+
+    </canvas>
+
+    
+    <div id="container" class="container">
+        <p id="title" style="color:white; font-weight: bold;
+        font-size: 5em; font-family: Arial; display: none; text-align: center;">Choose level</p>
+        <div id="sub" class="sub">
+            <i class="fa-solid fa-play"></i>
+            <button id="play" class="btn">
+                Play Game
+            </button>
+        </div>
+
+        <div id="lvlcont" style="display: none;" class="lvlcont">
+            <div class="lvlbox">1</div>
+            <div class="lvlbox">2</div>
+        </div>
+    </div>
+
+
+    <section id="wincont" class="wincont" style="display: none;">
+
+        <p style="text-align: center; font-weight: bold; font-weight: bold;
+        font-family: Arial; font-size: 5em; color: white;">You Won!</p>
+
+        <i  class="fa-solid fa-check" style="color:green; font-size: 10em; margin-left: 35%;"></i>
+        <p style="text-align: center; font-weight: bold; font-weight: bold;
+font-family: Arial; font-size: 2em; color: white;">Congratulations!</p>
+
+        <div>
+
+            <button id="restart" class="restart">
+                <i style="font-size: 1.2em;" class="fa-solid fa-arrow-rotate-left"></i>
+                Restart</button>
+
+            <button id="back" class="red restart">
+                <i class="fa-solid fa-backward"></i> Back to Menu
+
+            </button>
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+
+canvas {
+    margin: auto;
+    transition-property: all;
+    transition: 0.01s;
+    display: none;
+}
+
+
+
+.container {
+    width: 90%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-property: all;
+    transition: 1s;
+    /* background: url('images\\ninja.jpg') center/cover; */
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    border: 2px solid white;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+
+.btn {
+    padding: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    border: 0px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+
+}
+
+
+.sub:hover,
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+}
+
+
+canvas {
+    background-image: url('images\\background.png');
+    background-size: cover;
+}
+
+
+.lvlcont {
+    width: 90%;
+    display: flex;
+
+
+}
+
+.lvlbox {
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    padding: 5px 30px;
+    margin: 7px;
+    transition: 0.5s;
+}
+
+
+.lvlbox:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.wincont {
+    border: 1px solid black;
+    padding: 40px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 30%;
+    margin-top: 5%;
+}
+
+
+.red
+{
+    background-color:red !important ;
+}
+
+.restart
+{
+    border: 0px;
+    background-color: green;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 2em;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+
+.restart:hover
+{
+    background-color: white !important;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
